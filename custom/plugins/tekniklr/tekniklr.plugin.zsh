@@ -1,6 +1,6 @@
 alias yidhra='ssh tekniklr@tekniklr.dyndns-remote.com'
 alias git="$HOME/Dropbox/programs/git_forks/git-achievements/git-achievements"
-alias pushgithub='git push -u origin master'
+alias pushgit='git push -u origin master'
 alias grep='grep --color=auto -i'
 alias locate='locate -i'
 alias updatedb='sudo /usr/libexec/locate.updatedb'
