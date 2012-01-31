@@ -8,6 +8,11 @@ alias updatedb='sudo /usr/libexec/locate.updatedb'
 # locations
 alias tekrails="cd $HOME/Documents/Web/tekniklr.com/tekniklr.com"
 alias wptheme="cd $HOME/Documents/Web/tekniklr.com/tekniklr.com/public/wpblog/wp-content/themes/tekniklr.com"
+
+webdir() { cd ~/Documents/Web/$1; }
+_webdir() { _files -W ~/Documents/Web -/; }
+compdef _webdir webdir
+
 program() { cd ~/Dropbox/programs/$1; }
 _program() { _files -W ~/Dropbox/programs -/; }
 compdef _program program
