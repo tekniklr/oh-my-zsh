@@ -37,7 +37,7 @@ for plugin ($plugins); do
 done
 
 # Load and run compinit
-autoload -U compinit
+autoload -Uz compinit
 compinit -i
 
 
