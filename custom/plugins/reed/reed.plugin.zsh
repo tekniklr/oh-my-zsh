@@ -16,7 +16,6 @@ alias simplediff='patch -p0 < ~/Documents/Reed/queue/simple.diff '
 
 # locations
 alias codedir='cd /Volumes/code/'
-alias tekdev='cd /Users/solow/Documents/tekniklr.com'
 alias wss-apps='cd /Volumes/code/wss-apps/'
 project() { cd /Volumes/code/wss-apps/$1; }
 _project() { _files -W /Volumes/code/wss-apps -/; }
