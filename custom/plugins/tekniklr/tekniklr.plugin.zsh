@@ -5,7 +5,6 @@ unsetopt  BEEP MENU_COMPLETE
 
 # aliases
 alias yidhra='ssh tekniklr@tekniklr.dyndns-remote.com'
-alias git="$HOME/Dropbox/programs/git_forks/git-achievements/git-achievements"
 alias pushgit='git push -u origin master'
 alias grep='grep --color=auto -i'
 alias locate='locate -i'
