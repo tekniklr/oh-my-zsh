@@ -38,4 +38,11 @@ compdef _deploy deploy
 
 export PATH=$PATH:$HOME/Documents/Reed/bin:/Applications/Programming:/opt/local/lib/postgresql84/bin:/usr/local/git/bin:/opt/local/lib/mysql5/bin:/opt/local/bin:/opt/local/sbin:$ORACLE_HOME
 
+# set up ruby
+if [[ -s "$HOME/.rvm/scripts/rvm" ]] ; then 
+  source "$HOME/.rvm/scripts/rvm"
+  rvm default
+  rvm gemset use rails2reed
+fi
+
 kinit
