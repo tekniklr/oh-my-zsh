@@ -16,21 +16,15 @@ alias simplediff='patch -p0 < ~/Documents/Reed/queue/simple.diff '
 
 # locations
 alias codedir='cd /Volumes/code/'
-alias wss-apps='cd /Volumes/code/wss-apps/'
-project() { cd /Volumes/code/wss-apps/$1; }
-_project() { _files -W /Volumes/code/wss-apps -/; }
-compdef _project project
+_code_dir() { _files -W /Volumes/code/git -/; _files -W /Volumes/code/wss-apps -/; }
 
 # deployment
-deploy_prod() { produce.sh $1; }
-_deploy_prod() { _files -W /Volumes/code/wss-apps -/; }
-compdef _deploy_prod deploy_prod
-deploy_stag() { stage.sh $1; }
-_deploy_stag() { _files -W /Volumes/code/wss-apps -/; }
-compdef _deploy_stag deploy_stag
+produce() { produce.sh $1; }
+compdef _code_dir produce
+stage() { stage.sh $1; }
+compdef _code_dir stage
 deploy() { stage.sh $1; produce.sh $1; }
-_deploy() { _files -W /Volumes/code/wss-apps -/; }
-compdef _deploy deploy
+compdef _code_dir deploy
 
 # if [[ -s "$HOME/perl5/perlbrew/etc/bashrc" ]] ; then 
 #   source "$HOME/perl5/perlbrew/etc/bashrc"
