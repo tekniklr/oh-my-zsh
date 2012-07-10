@@ -17,6 +17,10 @@ alias simplediff='patch -p0 < ~/Documents/Reed/queue/simple.diff '
 # locations
 alias codedir='cd /Volumes/code/'
 _code_dir() { _files -W /Volumes/code/git -/; _files -W /Volumes/code/wss-apps -/; }
+gitdir() { cd /Volumes/code/git/$1; }
+compdef _code_dir gitdir
+svndir() { cd /Volumes/code/wss-apps/$1; }
+compdef _code_dir svndir
 
 # deployment
 produce() { produce.sh $1; }
