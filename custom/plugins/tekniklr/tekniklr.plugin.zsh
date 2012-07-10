@@ -9,6 +9,7 @@ alias pushgit='git push -u origin master'
 alias grep='grep --color=auto -i'
 alias locate='locate -i'
 alias updatedb='sudo /usr/libexec/locate.updatedb'
+alias slime='subl'
 
 
 # locations
