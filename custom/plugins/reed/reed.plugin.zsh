@@ -21,6 +21,8 @@ gitdir() { cd /Volumes/code/git/$1; }
 compdef _code_dir gitdir
 svndir() { cd /Volumes/code/wss-apps/$1; }
 compdef _code_dir svndir
+slime() { subl /Volumes/code/git/$1; }
+compdef _code_dir slime
 
 # deployment
 produce() { produce.sh $1; }
