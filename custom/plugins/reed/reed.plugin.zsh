@@ -1,3 +1,5 @@
+#echo "Running reed.plugin.zsh..."
+
 # oracle
 alias cdf='eval `osascript /Applications/Utilities/OpenTerminal.app/Contents/Resources/Scripts/OpenTerminal.scpt `'
 alias oracle='/usr/local/bin/yasql'
@@ -36,13 +38,13 @@ compdef _code_dir deploy
 #   source "$HOME/perl5/perlbrew/etc/bashrc"
 # fi
 
-export PATH=$PATH:$HOME/Documents/Reed/bin:/Applications/Programming:/opt/local/lib/postgresql84/bin:/usr/local/git/bin:/opt/local/lib/mysql5/bin:/opt/local/bin:/opt/local/sbin:$ORACLE_HOME
-
-# set up ruby
+# set up ruby some more (rest was already done)
 if [[ -s "$HOME/.rvm/scripts/rvm" ]] ; then 
-  source "$HOME/.rvm/scripts/rvm"
-  rvm default
   rvm gemset use rails2reed
 fi
+
+# environment
+PATH=$PATH:$HOME/bin:$HOME/Documents/Reed/bin:/Applications/Programming:/opt/local/lib/postgresql84/bin:/usr/local/git/bin:/opt/local/lib/mysql5/bin:/opt/local/bin:/opt/local/sbin:$ORACLE_HOME
+#echo "Path is: $PATH"
 
 kinit
