@@ -3,7 +3,7 @@
 # oracle
 alias cdf='eval `osascript /Applications/Utilities/OpenTerminal.app/Contents/Resources/Scripts/OpenTerminal.scpt `'
 alias oracle='/usr/local/bin/yasql'
-export ORACLE_HOME='/Applications/Programming/Oracle/instantclient_10_2/'
+export ORACLE_HOME='/Applications/Programming/Oracle/instantclient_11_2/'
 export TNS_ADMIN=$ORACLE_HOME
 export LD_LIBRARY_PATH=$ORACLE_HOME
 export DYLD_LIBRARY_PATH=$ORACLE_HOME
