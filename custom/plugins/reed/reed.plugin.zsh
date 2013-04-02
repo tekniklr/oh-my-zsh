@@ -2,7 +2,7 @@
 
 # oracle
 alias cdf='eval `osascript /Applications/Utilities/OpenTerminal.app/Contents/Resources/Scripts/OpenTerminal.scpt `'
-alias oracle='/usr/local/bin/yasql'
+alias oracle='rlwrap sqlplus'
 export ORACLE_HOME='/Applications/Programming/Oracle/instantclient_11_2/'
 export TNS_ADMIN=$ORACLE_HOME
 export LD_LIBRARY_PATH=$ORACLE_HOME
