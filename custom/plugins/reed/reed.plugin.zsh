@@ -39,9 +39,9 @@ compdef _code_dir deploy
 # fi
 
 # set up ruby some more (rest was already done)
-if [[ -s "$HOME/.rvm/scripts/rvm" ]] ; then 
-  rvm gemset use rails2reed
-fi
+# if [[ -s "$HOME/.rvm/scripts/rvm" ]] ; then 
+#   rvm gemset use rails2reed
+# fi
 
 # environment
 PATH=$PATH:$HOME/bin:$HOME/Documents/Reed/bin:/Applications/Programming:/opt/local/lib/postgresql84/bin:/usr/local/git/bin:/opt/local/lib/mysql5/bin:/opt/local/bin:/opt/local/sbin:$ORACLE_HOME
