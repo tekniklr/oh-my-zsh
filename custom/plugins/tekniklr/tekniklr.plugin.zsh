@@ -24,13 +24,6 @@ _program() { _files -W ~/Dropbox/programs -/; }
 compdef _program program
 
 
-# set up ruby
-if [[ -s "$HOME/.rvm/scripts/rvm" ]] ; then 
-  source "$HOME/.rvm/scripts/rvm"
-  rvm default
-fi
-
-
 # environment
 PATH=$PATH:$HOME/bin:$HOME/Dropbox/programs/bin:$HOME/Dropbox/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/opt/subversion/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
 #echo "Path is: $PATH"
