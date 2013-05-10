@@ -36,7 +36,7 @@ compdef _code_dir deploy
 
 
 # environment
-PATH=$PATH:$HOME/bin:$HOME/Documents/Reed/bin:/Applications/Programming:/opt/local/lib/postgresql84/bin:/usr/local/git/bin:/opt/local/lib/mysql5/bin:/opt/local/bin:/opt/local/sbin:$ORACLE_HOME
-#echo "Path is: $PATH"
+PATH=$HOME/Documents/Reed/bin:$ORACLE_HOME:$PATH
+
 
 kinit

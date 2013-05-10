@@ -25,5 +25,8 @@ compdef _program program
 
 
 # environment
-PATH=$PATH:$HOME/bin:$HOME/Dropbox/programs/bin:$HOME/Dropbox/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/opt/subversion/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
-#echo "Path is: $PATH"
+PATH=$PATH:$HOME/bin:$HOME/Dropbox/programs/bin:$HOME/Dropbox/bin:$HOME/.rbenv/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
+
+
+# set up ruby
+eval "$(rbenv init -)"
