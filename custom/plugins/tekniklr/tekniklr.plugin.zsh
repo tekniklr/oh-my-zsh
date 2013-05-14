@@ -25,6 +25,7 @@ compdef _program program
 
 
 # environment
+export PERL5LIB=/System/Library/Perl/Extras/5.12/darwin-thread-multi-2level/:/Library/Perl/5.12/:/System/Library/Perl/Extras/5.12/
 PATH=$PATH:$HOME/bin:$HOME/Dropbox/programs/bin:$HOME/Dropbox/bin:$HOME/.rbenv/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
 
 
