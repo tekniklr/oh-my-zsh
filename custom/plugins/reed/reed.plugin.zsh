@@ -36,7 +36,7 @@ compdef _code_dir deploy
 
 
 # environment
-PATH=$HOME/Documents/Reed/bin:$ORACLE_HOME:$PATH
+PATH=$HOME/Documents/Reed/bin:$ORACLE_HOME:/opt/local/lib/postgresql92/bin:$PATH
 
 
 kinit
