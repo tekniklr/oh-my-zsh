@@ -8,6 +8,7 @@ export TNS_ADMIN=$ORACLE_HOME
 export LD_LIBRARY_PATH=$ORACLE_HOME
 export DYLD_LIBRARY_PATH=$ORACLE_HOME
 export NLS_LANG=AMERICAN_AMERICA.UTF8
+export ORA_NCHAR_LITERAL_REPLACE=TRUE
 
 # postgresql
 alias startpostgres='/opt/local/lib/postgresql84/bin/pg_ctl -D /opt/local/var/db/postgresql84/defaultdb -l logfile start'
