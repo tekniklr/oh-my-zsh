@@ -1,7 +1,6 @@
 #echo "Running reed.plugin.zsh..."
 
 # oracle
-alias cdf='eval `osascript /Applications/Utilities/OpenTerminal.app/Contents/Resources/Scripts/OpenTerminal.scpt `'
 alias oracle='rlwrap sqlplus'
 export ORACLE_HOME='/Applications/Programming/Oracle/instantclient_11_2/'
 export TNS_ADMIN=$ORACLE_HOME
@@ -13,9 +12,6 @@ export ORA_NCHAR_LITERAL_REPLACE=TRUE
 # postgresql
 alias startpostgres='/opt/local/lib/postgresql84/bin/pg_ctl -D /opt/local/var/db/postgresql84/defaultdb -l logfile start'
 alias stoppostgres='/opt/local/lib/postgresql84/bin/pg_ctl -D /opt/local/var/db/postgresql84/defaultdb -l logfile stop'
-
-# when you get a lame rdoc mutex error, run this in your approot and commit changes.
-alias simplediff='patch -p0 < ~/Documents/Reed/queue/simple.diff '
 
 # locations
 alias codedir='cd /Volumes/code/'
@@ -35,9 +31,5 @@ compdef _code_dir stage
 deploy() { stage.sh $1; produce.sh $1; }
 compdef _code_dir deploy
 
-
 # environment
 PATH=$HOME/Documents/Reed/bin:$ORACLE_HOME:/opt/local/lib/postgresql92/bin:$PATH
-
-
-kinit
