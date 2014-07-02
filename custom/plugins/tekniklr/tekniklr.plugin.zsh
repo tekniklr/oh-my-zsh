@@ -12,6 +12,9 @@ alias grep='grep --color=auto -i'
 alias locate='locate -i'
 alias updatedb='sudo /usr/libexec/locate.updatedb'
 
+# mysql
+alias mysqlstart='sudo /opt/local/share/mysql5/mysql/mysql.server start'
+alias mysqlstop='sudo /opt/local/share/mysql5/mysql/mysql.server stop'
 
 # locations
 alias tekrails="cd $HOME/Documents/Web/tekniklr.com/tekniklr.com"
