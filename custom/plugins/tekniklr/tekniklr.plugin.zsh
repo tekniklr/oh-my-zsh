@@ -7,7 +7,6 @@ unsetopt  BEEP MENU_COMPLETE
 
 # aliases
 alias yidhra='ssh tekniklr@tekniklr.dyndns-remote.com'
-alias pushgit='git push -u origin master'
 alias grep='grep --color=auto -i'
 alias locate='locate -i'
 alias updatedb='sudo /usr/libexec/locate.updatedb'
