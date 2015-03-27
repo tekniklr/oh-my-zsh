@@ -17,6 +17,9 @@ alias rainbow='yes "$(seq 231 -1 16)" | while read i; do printf "\x1b[48;5;${i}m
 alias mysqlstart='sudo /opt/local/share/mysql5/mysql/mysql.server start'
 alias mysqlstop='sudo /opt/local/share/mysql5/mysql/mysql.server stop'
 
+# postgresql
+alias pgstart="sudo su postgres -c '/opt/local/lib/postgresql91/bin/postgres -D /opt/local/var/db/postgresql91/defaultdb'"
+
 # locations
 alias tekrails="cd $HOME/Documents/Web/tekniklr.com/tekniklr.com"
 alias wptheme="cd $HOME/Documents/Web/tekniklr.com/tekniklr.com/public/wpblog/wp-content/themes/tekniklr.com"
