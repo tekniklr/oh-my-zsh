@@ -14,8 +14,8 @@ alias updatedb='sudo /usr/libexec/locate.updatedb'
 alias rainbow='yes "$(seq 231 -1 16)" | while read i; do printf "\x1b[48;5;${i}m\n"; sleep .02; done' # via https://twitter.com/climagic/status/573885950759157760
 
 # mysql
-alias mysqlstart='sudo /opt/local/share/mysql5/mysql/mysql.server start'
-alias mysqlstop='sudo /opt/local/share/mysql5/mysql/mysql.server stop'
+alias mysqlstart='sudo /opt/local/share/mysql56/support-files/mysql.server start'
+alias mysqlstop='sudo /opt/local/share/mysql56/support-files/mysql.server stop'
 
 # postgresql
 alias pgstart="sudo su postgres -c '/opt/local/lib/postgresql91/bin/postgres -D /opt/local/var/db/postgresql91/defaultdb'"
