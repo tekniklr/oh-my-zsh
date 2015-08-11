@@ -10,6 +10,9 @@ alias grep='grep --color=auto -i'
 alias locate='locate -i'
 alias updatedb='sudo /usr/libexec/locate.updatedb'
 
+# get public IP
+alias whereami="curl -s checkip.dyndns.org|sed -e 's/.*Current IP Address: //' -e 's/<.*$//'"
+
 # silliness
 alias rainbow='yes "$(seq 231 -1 16)" | while read i; do printf "\x1b[48;5;${i}m\n"; sleep .02; done' # via https://twitter.com/climagic/status/573885950759157760
 
