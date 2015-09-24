@@ -13,6 +13,9 @@ export ORA_NCHAR_LITERAL_REPLACE=TRUE
 alias startpostgres='/opt/local/lib/postgresql84/bin/pg_ctl -D /opt/local/var/db/postgresql84/defaultdb -l logfile start'
 alias stoppostgres='/opt/local/lib/postgresql84/bin/pg_ctl -D /opt/local/var/db/postgresql84/defaultdb -l logfile stop'
 
+# remove development rails log files, which occasionally fill up my code volume
+alias rmrailslogs='find /Volumes/code -type f -name "*.log" -delete'
+
 # locations
 alias codedir='cd /Volumes/code/'
 _code_dir() { _files -W /Volumes/code/git -/; _files -W /Volumes/code/wss-apps -/; }
