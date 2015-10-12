@@ -15,6 +15,7 @@ alias whereami="curl -s checkip.dyndns.org|sed -e 's/.*Current IP Address: //' -
 
 # silliness
 alias rainbow='yes "$(seq 231 -1 16)" | while read i; do printf "\x1b[48;5;${i}m\n"; sleep .02; done' # via https://twitter.com/climagic/status/573885950759157760
+alias trouts='rake routes | cowsay -W 70 -f fish'
 
 # mysql
 alias mysqlstart='sudo /opt/local/share/mysql56/support-files/mysql.server start'
