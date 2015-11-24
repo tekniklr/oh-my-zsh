@@ -18,7 +18,7 @@ alias rmrailslogs='find /Volumes/code -type f -name "*.log" -delete'
 
 # locations
 alias codedir='cd /Volumes/code/'
-_code_dir() { _files -W /Volumes/code/git -/; _files -W /Volumes/code/wss-apps -/; }
+_code_dir() { _files -W /Volumes/code/git -/; }
 gitdir() { cd /Volumes/code/git/$1; }
 compdef _code_dir gitdir
 svndir() { cd /Volumes/code/wss-apps/$1; }
