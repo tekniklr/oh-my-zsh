@@ -16,6 +16,10 @@ alias stoppostgres='/opt/local/lib/postgresql84/bin/pg_ctl -D /opt/local/var/db/
 # remove development rails log files, which occasionally fill up my code volume
 alias rmrailslogs='find /Volumes/code -type f -name "*.log" -delete'
 
+# rails 4.2 no longer puts non-dev logging into stdout... alias workaround to 
+# see console logging with triage
+alias triage='(tail -F log/triage.log &) && rails s -e triage'
+
 # locations
 alias codedir='cd /Volumes/code/'
 _code_dir() { _files -W /Volumes/code/git -/; }
