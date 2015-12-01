@@ -18,6 +18,7 @@ alias rmrailslogs='find /Volumes/code -type f -name "*.log" -delete'
 
 # rails 4.2 no longer puts non-dev logging into stdout... alias workaround to 
 # see console logging with triage
+# https://stackoverflow.com/questions/25541222/how-do-i-get-sql-logging-in-rails-4-webrick-for-a-non-development-environment
 alias triage='(tail -F log/triage.log &) && rails s -e triage'
 
 # locations
