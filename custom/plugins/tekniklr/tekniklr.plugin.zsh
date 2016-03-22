@@ -39,3 +39,7 @@ PATH=$PATH:$HOME/bin:$HOME/Dropbox/programs/bin:$HOME/.rbenv/bin:/usr/bin:/bin:/
 
 # set up ruby
 eval "$(rbenv init - zsh)"
+
+
+# https://github.com/nvbn/thefuck
+eval "$(thefuck --alias)"
