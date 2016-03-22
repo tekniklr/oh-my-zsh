@@ -18,11 +18,8 @@ alias rainbow='yes "$(seq 231 -1 16)" | while read i; do printf "\x1b[48;5;${i}m
 alias trouts='rake routes | cowsay -W 70 -f fish'
 
 # mysql
-alias mysqlstart='sudo /opt/local/share/mysql56/support-files/mysql.server start'
-alias mysqlstop='sudo /opt/local/share/mysql56/support-files/mysql.server stop'
-
-# postgresql
-alias pgstart="sudo su postgres -c '/opt/local/lib/postgresql91/bin/postgres -D /opt/local/var/db/postgresql91/defaultdb'"
+alias mysqlstart='mysql.server start'
+alias mysqlstop='mysql.server stop'
 
 # locations
 alias tekrails="cd $HOME/Documents/Web/tekniklr.com/tekniklr.com"
@@ -37,7 +34,7 @@ compdef _program program
 
 # environment
 export PERL5LIB=/Library/Perl/5.16:/System/Library/Perl/Extras/5.16/darwin-thread-multi-2level:/System/Library/Perl/Extras/5.16
-PATH=$PATH:$HOME/bin:$HOME/Dropbox/programs/bin:$HOME/.rbenv/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
+PATH=$PATH:$HOME/bin:$HOME/Dropbox/programs/bin:$HOME/.rbenv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
 
 
 # set up ruby

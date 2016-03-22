@@ -8,10 +8,6 @@ export OCI_DIR=$ORACLE_HOME
 export NLS_LANG=AMERICAN_AMERICA.UTF8
 export ORA_NCHAR_LITERAL_REPLACE=TRUE
 
-# postgresql
-alias startpostgres='/opt/local/lib/postgresql84/bin/pg_ctl -D /opt/local/var/db/postgresql84/defaultdb -l logfile start'
-alias stoppostgres='/opt/local/lib/postgresql84/bin/pg_ctl -D /opt/local/var/db/postgresql84/defaultdb -l logfile stop'
-
 # remove development rails log files, which occasionally fill up my code volume
 alias rmrailslogs='find /Volumes/code -type f -name "*.log" -delete'
 
@@ -34,4 +30,4 @@ deploy() { stage.sh $1; produce.sh $1; }
 compdef _code_dir deploy
 
 # environment
-PATH=$HOME/Documents/Reed/bin:$ORACLE_HOME:/opt/local/lib/postgresql92/bin:$PATH
+PATH=$HOME/Documents/Reed/bin:$ORACLE_HOME:$PATH
