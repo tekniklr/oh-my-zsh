@@ -1,5 +1,3 @@
-#echo "Running tekniklr.plugin.zsh..."
-
 # zsh config
 setopt    ALWAYS_TO_END AUTO_PUSHD AUTO_REMOVE_SLASH HIST_FIND_NO_DUPS
 unsetopt  BEEP MENU_COMPLETE
@@ -10,16 +8,20 @@ alias grep='grep --color=auto -i'
 alias locate='locate -i'
 alias updatedb='sudo /usr/libexec/locate.updatedb'
 
+
 # get public IP
 alias whereami="curl -s checkip.dyndns.org|sed -e 's/.*Current IP Address: //' -e 's/<.*$//'"
+
 
 # silliness
 alias rainbow='yes "$(seq 231 -1 16)" | while read i; do printf "\x1b[48;5;${i}m\n"; sleep .02; done' # via https://twitter.com/climagic/status/573885950759157760
 alias trouts='rake routes | cowsay -W 70 -f fish'
 
+
 # mysql
 alias mysqlstart='mysql.server start'
 alias mysqlstop='mysql.server stop'
+
 
 # locations
 alias tekrails="cd $HOME/Documents/Web/tekniklr.com/tekniklr.com"
