@@ -1,6 +1,5 @@
 if [[ -z $commands[thefuck] ]]; then
-    echo 'thefuck is not installed, you should "pip install thefuck" first'
-    return -1
+    return 0
 fi
 
 # Register alias
