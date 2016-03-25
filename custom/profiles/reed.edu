@@ -1,5 +1,3 @@
-#echo "Running reed.plugin.zsh..."
-
 # oracle
 alias oracle='rlwrap sqlplus'
 export ORACLE_HOME='/Applications/Programming/Oracle/instantclient_11_2/'
