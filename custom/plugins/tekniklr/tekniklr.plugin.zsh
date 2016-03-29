@@ -35,5 +35,6 @@ compdef _program program
 
 
 # environment
+export EDITOR=~/bin/subl
 export PERL5LIB=/Library/Perl/5.16:/System/Library/Perl/Extras/5.16/darwin-thread-multi-2level:/System/Library/Perl/Extras/5.16
 PATH=$PATH:$HOME/bin:$HOME/Dropbox/programs/bin:$HOME/.rbenv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
