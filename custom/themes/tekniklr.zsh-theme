@@ -7,8 +7,9 @@ local host="%{$fg[magenta]%}%m%{$fg[black]%}"
 local location="%{$fg[blue]%}%c%{$fg[black]%}"
 local time="%{$fg[yellow]%}%*%{$reset_color%}"
 
-local pass="%{$fg[green]%}⇒%{$reset_color%} "
-local fail="%{$fg[red]%}⇒%{$reset_color%} "
+local prompt_char="⇒"
+local pass="%{$fg[green]%}${prompt_char}%{$reset_color%} "
+local fail="%{$fg[red]%}${prompt_char}%{$reset_color%} "
 local exit_status="%(?,${pass},${fail})"
 
 PROMPT='${host}✨ ${location}$(git_prompt_info) ${exit_status} '
