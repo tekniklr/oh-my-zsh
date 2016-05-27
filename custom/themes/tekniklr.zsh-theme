@@ -12,5 +12,5 @@ local pass="%{$fg[green]%}${prompt_char}%{$reset_color%} "
 local fail="%{$fg[red]%}${prompt_char}%{$reset_color%} "
 local exit_status="%(?,${pass},${fail})"
 
-PROMPT='${host}✨ ${location}$(git_prompt_info) ${exit_status} '
+PROMPT='${host}🍕 ${location}$(git_prompt_info) ${exit_status} '
 RPROMPT='${time}'
