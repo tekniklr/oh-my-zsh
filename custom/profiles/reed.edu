@@ -1,6 +1,6 @@
 # oracle
 alias oracle='rlwrap sqlplus'
-export ORACLE_HOME='/Applications/Programming/Oracle/instantclient_11_2/'
+export ORACLE_HOME='/Applications/Programming/Oracle/instantclient_12_1/'
 export TNS_ADMIN=$ORACLE_HOME
 export OCI_DIR=$ORACLE_HOME
 export NLS_LANG=AMERICAN_AMERICA.UTF8
