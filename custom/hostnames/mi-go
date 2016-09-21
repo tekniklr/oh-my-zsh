@@ -6,7 +6,8 @@ export OCI_DIR=$ORACLE_HOME
 export NLS_LANG=AMERICAN_AMERICA.UTF8
 export ORA_NCHAR_LITERAL_REPLACE=TRUE
 
-# remove development rails log files, which occasionally fill up my code volume
+# remove development and triage rails log files, which occasionally fill up 
+# the volume
 alias rmrailslogs='find /Volumes/code -type f -name "*.log" -delete'
 
 # locations
