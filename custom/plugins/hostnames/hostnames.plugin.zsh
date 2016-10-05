@@ -14,3 +14,7 @@ for i in {1..${#parts}}; do
     source $file
   fi
 done
+
+# note: on macOS some wi-fi networks will abscond with your hostname! force 
+# the correct hostname with `sudo scutil --set HostName <my cool hostname>`
+# https://apple.stackexchange.com/questions/50022/hostname-changes-in-the-terminal-when-connecting-to-some-wifi-networks
