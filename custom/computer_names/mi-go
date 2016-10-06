@@ -10,6 +10,13 @@ export ORA_NCHAR_LITERAL_REPLACE=TRUE
 # the volume
 alias rmrailslogs='find /Volumes/code -type f -name "*.log" -delete'
 
+# running redis without the default config file specified was causing 
+# #<ArgumentError: odd number of arguments for Hash> when trying to connect in
+# the rails console. ¯\_(ツ)_/¯ 
+# http://stackoverflow.com/a/29639531/433189
+alias redis-start='redis-server /usr/local/etc/redis.conf &'
+alias redis-stop="killall 'redis-server 127.0.0.1:6379'"
+
 # locations
 alias codedir='cd /Volumes/code/'
 _code_dir() { _files -W /Volumes/code/git -/; }
