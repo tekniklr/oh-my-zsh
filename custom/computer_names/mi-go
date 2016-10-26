@@ -37,3 +37,7 @@ compdef _code_dir deploy
 
 # environment
 PATH=$HOME/Documents/Reed/bin:$ORACLE_HOME:$PATH
+
+# bundler was often triggering Errno::EMFILE Too many open files
+# default maxOS ulimit is apparently 256, which is apparently not enough
+ulimit -n 512
