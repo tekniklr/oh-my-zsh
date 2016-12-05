@@ -1,0 +1,1 @@
+alias ksudo='ksu -e sudo -i'
