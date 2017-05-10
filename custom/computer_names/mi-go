@@ -41,3 +41,5 @@ PATH=$HOME/Documents/Work/bin:$ORACLE_HOME:$PATH
 # bundler was often triggering Errno::EMFILE Too many open files
 # default maxOS ulimit is apparently 256, which is apparently not enough
 ulimit -n 512
+
+kinit
