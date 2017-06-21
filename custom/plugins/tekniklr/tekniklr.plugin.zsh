@@ -42,3 +42,4 @@ export PATH=~$PATH:~/bin:/bin:~/Dropbox/programs/bin:/usr/bin:/bin:/usr/sbin:/sb
 
 # rbenv
 eval "$(rbenv init -)"
+alias rails='bundle exec rails'
