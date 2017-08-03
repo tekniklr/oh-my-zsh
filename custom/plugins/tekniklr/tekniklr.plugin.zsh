@@ -41,5 +41,7 @@ export PERL5LIB=/Library/Perl/5.16:/System/Library/Perl/Extras/5.16/darwin-threa
 export PATH=$PATH:~/bin:/bin:~/Dropbox/programs/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 
 # rbenv
-eval "$(rbenv init -)"
-alias rails='bundle exec rails'
+if type rbenv > /dev/null; then
+  eval "$(rbenv init -)"
+  alias rails='bundle exec rails'
+fi
