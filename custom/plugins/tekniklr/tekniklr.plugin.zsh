@@ -30,15 +30,15 @@ alias wptheme="cd $HOME/Documents/Web/tekniklr.com/tekniklr.com/public/wpblog/wp
 webdir() { cd ~/Documents/Web/$1; }
 _webdir() { _files -W ~/Documents/Web -/; }
 compdef _webdir webdir
-program() { cd ~/Dropbox/programs/$1; }
-_program() { _files -W ~/Dropbox/programs -/; }
+program() { cd ~/Dropbox/code/$1; }
+_program() { _files -W ~/Dropbox/code -/; }
 compdef _program program
 
 
 # environment
 export EDITOR=~/bin/subl
 export PERL5LIB=/Library/Perl/5.16:/System/Library/Perl/Extras/5.16/darwin-thread-multi-2level:/System/Library/Perl/Extras/5.16
-export PATH=$PATH:~/bin:/bin:~/Dropbox/programs/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+export PATH=$PATH:~/bin:/bin:~/Dropbox/code/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 
 # rbenv
 if type rbenv > /dev/null; then
