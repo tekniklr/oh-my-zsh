@@ -1,5 +1,7 @@
 if [[ -z $commands[thefuck] ]]; then
-    return 0
+    echo 'thefuck is not installed, you should "pip install thefuck" or "brew install thefuck" first.'
+    echo 'See https://github.com/nvbn/thefuck#installation'
+    return 1
 fi
 
 # Register alias
