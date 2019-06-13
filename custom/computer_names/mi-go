@@ -1,3 +1,5 @@
+alias python='/usr/local/bin/python3'
+
 # oracle
 alias oracle='rlwrap sqlplus'
 export ORACLE_HOME='/Applications/Programming/Oracle/instantclient_12_1/'
