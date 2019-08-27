@@ -25,14 +25,8 @@ alias mysqlstop='mysql.server stop'
 
 
 # locations
-alias tekrails="cd $HOME/Documents/Web/tekniklr.com/tekniklr.com"
-alias wptheme="cd $HOME/Documents/Web/tekniklr.com/tekniklr.com/public/wpblog/wp-content/themes/tekniklr.com"
-webdir() { cd ~/Documents/Web/$1; }
-_webdir() { _files -W ~/Documents/Web -/; }
-compdef _webdir webdir
-program() { cd ~/Dropbox/code/$1; }
-_program() { _files -W ~/Dropbox/code -/; }
-compdef _program program
+alias tekrails="cd $HOME/Documents/code/tekniklr_web/tekniklr.com"
+alias wptheme="cd $HOME/Documents/code/tekniklr_web/tekniklr.com/public/wpblog/wp-content/themes/tekniklr.com"
 
 
 # environment
