@@ -3,7 +3,7 @@ ZSH_THEME_GIT_PROMPT_SUFFIX=" %{$reset_color%}]"
 ZSH_THEME_GIT_PROMPT_DIRTY="💩"
 ZSH_THEME_GIT_PROMPT_CLEAN="🍺"
 
-local host="%{$fg[magenta]%}%m%{$reset_color%}"
+local host="%{$fg[magenta]%}$ComputerName%{$reset_color%}"
 local location="%{$fg[cyan]%}%c%{$reset_color%}"
 local time="%{$fg[yellow]%}%*%{$reset_color%}"
 
