@@ -35,7 +35,7 @@ deploy() { stage.sh $1; produce.sh $1; }
 compdef _code_dir deploy
 
 # environment
-PATH=~/Work/bin:$ORACLE_HOME:$PATH
+PATH=~/Work/bin:~/.docker/bin:$ORACLE_HOME:$PATH
 
 # bundler was often triggering Errno::EMFILE Too many open files
 # default maxOS ulimit is apparently 256, which is apparently not enough
