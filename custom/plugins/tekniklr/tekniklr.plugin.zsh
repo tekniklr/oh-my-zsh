@@ -27,7 +27,6 @@ alias mysqlstop='mysql.server stop'
 # locations
 alias codedir="cd $HOME/Documents/code/"
 alias tekrails="cd $HOME/Documents/code/tekniklr_web/tekniklr.com"
-alias wptheme="cd $HOME/Documents/code/tekniklr_web/tekniklr.com/public/wpblog/wp-content/themes/tekniklr.com"
 
 
 # environment
