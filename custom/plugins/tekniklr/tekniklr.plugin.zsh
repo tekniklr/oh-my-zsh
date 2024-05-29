@@ -34,8 +34,8 @@ export EDITOR=~/bin/subl
 export PERL5LIB=/Library/Perl/5.16:/System/Library/Perl/Extras/5.16/darwin-thread-multi-2level:/System/Library/Perl/Extras/5.16
 export PATH=$PATH:~/bin:/bin:~/Documents/code/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:~/.local/bin/:~/.rbenv/bin
 
+
 # rbenv
 if type rbenv > /dev/null; then
   eval "$(rbenv init -)"
-  alias rails='bundle exec rails'
 fi
