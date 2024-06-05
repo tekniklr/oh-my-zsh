@@ -27,6 +27,7 @@ alias mysqlstop='mysql.server stop'
 # locations
 alias codedir="cd $HOME/Documents/code/"
 alias tekrails="cd $HOME/Documents/code/tekniklr_web/tekniklr.com"
+alias biohack="cd $HOME/Documents/code/biohack_me"
 
 
 # environment
