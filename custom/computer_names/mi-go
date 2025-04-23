@@ -10,7 +10,7 @@ export ORA_NCHAR_LITERAL_REPLACE=TRUE
 
 # remove development and triage rails log files, which occasionally fill up 
 # the volume
-alias rmrailslogs='find /Volumes/code -type f -name "*.log" -delete'
+alias rmrailslogs='find ~/Work/code -type f -name "*.log" -delete'
 
 # running redis without the default config file specified was causing 
 # #<ArgumentError: odd number of arguments for Hash> when trying to connect in
@@ -20,10 +20,10 @@ alias redis-start='redis-server /usr/local/etc/redis.conf &'
 alias redis-stop="killall 'redis-server 127.0.0.1:6379'"
 
 # locations
-_code_dir() { _files -W /Volumes/code -/; }
-gitdir() { cd /Volumes/code/$1; }
+_code_dir() { _files -W ~/Work/code -/; }
+gitdir() { cd ~/Work/code/$1; }
 compdef _code_dir gitdir
-slime() { subl /Volumes/code/$1; }
+slime() { subl ~/Work/code/$1; }
 compdef _code_dir slime
 
 # deployment
